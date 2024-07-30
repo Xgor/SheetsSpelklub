@@ -1,6 +1,6 @@
 import openpyxl
 import random
-
+from tkinter.filedialog import askopenfilename
 # Gets name for the selected row in 
 def get_game_name(worksheet,number):
     cell_name = "{}{}".format("A", number)
@@ -8,7 +8,8 @@ def get_game_name(worksheet,number):
         print(worksheet[cell_name].value)
 
 def main():
-    wb = openpyxl.load_workbook('Spel_bokklubb_.xlsx')
+    filename = askopenfilename()
+    wb = openpyxl.load_workbook(filename)
 
     first_sheet = wb.sheetnames[0]
     worksheet = wb[first_sheet]
