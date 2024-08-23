@@ -28,7 +28,7 @@ def main():
     selected_games = []
     # Lägg in antalet spel valda
     for i in range(int(game_count)):
-        game = games[random.randrange(2, len(games))]
+        game = games[random.randrange(0, len(games))]
         selected_games.append(game)
         # Tar bort duplikationerna av valda spelet i listan
         games = [j for j in games if j != game]
