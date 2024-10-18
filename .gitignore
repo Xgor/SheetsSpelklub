@@ -1,2 +1,12 @@
-
 Spel_bokklubb.xlsx
+main.spec
+
+# Build results
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Bb]uild/
+[Dd]ist/
+[Oo]bj/
